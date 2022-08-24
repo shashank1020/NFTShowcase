@@ -1,10 +1,17 @@
-import './App.css';
+import {Button, Download, Features, SectionWrapper} from "./components";
+import assets from "./assets";
 
 function App() {
   return (
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <>
+          <SectionWrapper
+              title="You own store of Nifty NFTs. Start Selling & Growing"
+              description="Buy, store, collect NFTS, exchange & earn crypto. Join 25+ million people using ProNef Marketplace."
+              showBtn
+              mockupImg={assets.homeHero}
+              banner="banner"
+          />
+      </>
   );
 }
 
