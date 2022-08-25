@@ -5,32 +5,42 @@
 @tailwind utilities;
 
 .banner {
+    background: url("./assets/banner.svg");
     background-size: cover;
-    background: url("./assets/banner.svg") no-repeat center;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
 
 .banner02 {
+    background: url("./assets/banner02.svg");
+    background-color: #0b65c6;
     background-size: cover;
-    background: #0b65c6 url("./assets/banner02.svg") no-repeat center;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
 
 .banner03 {
+    background: url("./assets/banner03.svg");
     background-size: cover;
-    background: url("./assets/banner03.svg") no-repeat center;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
 
 .banner04 {
+    background: url("./assets/banner04.svg");
     background-size: cover;
-    background: url("./assets/banner04.svg") no-repeat center;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
+
 
 .fadeLeftMini {
     animation: fadeLeftMini 1s;
