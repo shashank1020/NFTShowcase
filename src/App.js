@@ -1,8 +1,12 @@
 import {Button, Download, Features, SectionWrapper} from "./components";
 import assets from "./assets";
+import styles from "./styles/Global";
+import {useState} from "react";
+import debounce from 'lodash.debounce'
 
 function App() {
-  return (
+    const [ownerInfo, setOwnerInfo] = useState('Shashank Maurya');
+    return (
       <>
           <SectionWrapper
               title="You own store of Nifty NFTs. Start Selling & Growing"
@@ -31,6 +35,15 @@ function App() {
               banner="banner02"
           />
           <Download />
+          <div className="px-4 py-2 justify-center items-center bg-primary flex-col text-center banner04">
+              <p className={`${styles.pText} ${styles.whiteText}`}
+                onMouseEnter={() => setOwnerInfo('Go to Github')}
+                onMouseLeave={() => setOwnerInfo('Shashank Maurya')}
+                 onClick={() => window.open('https://github.com/shashank1020', '_blank')}
+              >Made with love by {" "}
+                  <span className="bold owner-link">{ownerInfo}</span>
+              </p>
+          </div>
       </>
   );
 }
