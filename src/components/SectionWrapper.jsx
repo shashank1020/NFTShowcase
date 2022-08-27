@@ -10,7 +10,7 @@ const SectionWrapper = ({title, description, showBtn, mockupImg, banner, reverse
             <div className={`flex items-center ${reverse ? styles.boxReverseClass : styles.boxClass} w-11/12 sm:w-full minmd:w-3/4`}>
                 <div className={`${styles.descDiv} ${reverse ? " fadeRightMini" : " fadeLeftMini"} ${reverse ? styles.textRight : styles.textLeft}`}>
                     <h1 className={`${reverse ? styles.blackText : styles.whiteText} ${styles.h1Text}`}>{title}</h1>
-                    <p className={`${reverse ? styles.blackText : styles.whiteText}${styles.descriptionText}`}>{description}</p>
+                    <p className={`${reverse ? styles.blackText : styles.whiteText} ${styles.descriptionText}`}>{description}</p>
                     {showBtn && (
                         <Button
                             assetUrl={assets.expo}
