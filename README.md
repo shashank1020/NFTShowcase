@@ -3,3 +3,6 @@
 
 
 This is website for the NTF market app, showcasing its feature
+
+
+site is deployed on [netlify](https://nefpro.netlify.app/)
