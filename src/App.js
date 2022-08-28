@@ -1,8 +1,7 @@
-import {Button, Download, Features, SectionWrapper} from "./components";
+import { Download, Features, SectionWrapper} from "./components";
 import assets from "./assets";
 import styles from "./styles/Global";
 import {useState} from "react";
-import debounce from 'lodash.debounce'
 
 function App() {
     const [ownerInfo, setOwnerInfo] = useState('Shashank Maurya');
